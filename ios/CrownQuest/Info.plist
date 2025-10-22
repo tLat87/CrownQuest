@@ -39,38 +39,6 @@
 	<string>This app needs access to photo library to save and share crown images.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>This app may use microphone for voice recordings related to crown stories.</string>
-	<key>NSContactsUsageDescription</key>
-	<string>This app may access contacts to share crown stories with friends.</string>
-	<key>NSCalendarsUsageDescription</key>
-	<string>This app may access calendar to schedule crown-related events and reminders.</string>
-	<key>NSRemindersUsageDescription</key>
-	<string>This app may access reminders to set up crown study schedules.</string>
-	<key>NSMotionUsageDescription</key>
-	<string>This app may use motion sensors to enhance the crown exploration experience.</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>This app may access health data to track learning progress and study time.</string>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>This app may update health data to track learning achievements.</string>
-	<key>NSFaceIDUsageDescription</key>
-	<string>This app uses Face ID for secure access to your crown collection and progress.</string>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>This app would like to track you across apps and websites to provide personalized crown content and improve your learning experience.</string>
-	<key>NSLocalNetworkUsageDescription</key>
-	<string>This app uses local network to discover nearby crown enthusiasts and share stories.</string>
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>This app uses Bluetooth to connect with nearby devices for crown sharing features.</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>This app uses Bluetooth to share crown data with other devices.</string>
-	<key>NSAppleMusicUsageDescription</key>
-	<string>This app may access Apple Music to play historical music related to crown stories.</string>
-	<key>NSHomeKitUsageDescription</key>
-	<string>This app may access HomeKit to control smart home devices during crown study sessions.</string>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>This app uses speech recognition to help you learn crown-related terms and pronunciations.</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>This app uses location to provide location-based crown stories and historical information.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>This app uses location to provide location-based crown stories and historical information.</string>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -89,24 +57,10 @@
 	<false/>
 	<key>UIBackgroundModes</key>
 	<array>
-		<string>background-fetch</string>
-		<string>background-processing</string>
 		<string>remote-notification</string>
 	</array>
-	<key>UISupportsDocumentBrowser</key>
-	<true/>
-	<key>LSSupportsOpeningDocumentsInPlace</key>
-	<true/>
-	<key>UIFileSharingEnabled</key>
-	<true/>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
-	<key>NSUserActivityTypes</key>
-	<array>
-		<string>com.crownquest.story</string>
-		<string>com.crownquest.quiz</string>
-		<string>com.crownquest.crown</string>
-	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
