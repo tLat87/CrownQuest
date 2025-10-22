@@ -12,10 +12,10 @@ import {
 import LinearGradient from 'react-native-linear-gradient';
 import Share from 'react-native-share';
 import { useNavigation } from '@react-navigation/native';
-import { useApp } from '../context/AppContext';
-import { eras } from '../data/eras';
+import { useApp } from '../crownquest-context/CrownQuestContext';
+import { eras } from '../crownquest-data/crownquest-eras';
 
-const SurveyScreen: React.FC = () => {
+const CrownQuestSurveyScreen: React.FC = () => {
   const [selectedEra, setSelectedEra] = useState<string | null>(null);
   const navigation = useNavigation();
   const { dispatch } = useApp();
@@ -35,13 +35,13 @@ const SurveyScreen: React.FC = () => {
 
   const renderCrownIcon = () => (
     <View style={styles.crownContainer}>
-      <Image source={require('../assets/img/logo.png')} style={styles.crown} />
+      <Image source={require('../crownquest-assets/img/logo.png')} style={styles.crown} />
     </View>
   );
 
   const renderCharacter = () => (
     <View style={styles.characterContainer}>
-      <Image source={require('../assets/img/Man/1.png')} style={{width: 110, height: 180}} />
+      <Image source={require('../crownquest-assets/img/Man/1.png')} style={{width: 110, height: 180}} />
       
       <TouchableOpacity style={styles.speechBubble} onPress={handleShare}>
         <Text style={styles.quote}>
@@ -79,7 +79,7 @@ const SurveyScreen: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
-        source={require('../assets/img/5c11bbe5e16d5d7da07f52af4718639fd04d5bbe.png')} // Замените на ваш путь к изображению
+        source={require('../crownquest-assets/img/5c11bbe5e16d5d7da07f52af4718639fd04d5bbe.png')} // Замените на ваш путь к изображению
         style={styles.background}
         imageStyle={styles.backgroundImage}
       >
@@ -267,4 +267,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default SurveyScreen;
+export default CrownQuestSurveyScreen;

@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { UserStats, Settings, Story } from '../types';
+import { UserStats, Settings, Story } from '../crownquest-types/crownquest-types';
 
 interface AppState {
   userStats: UserStats;

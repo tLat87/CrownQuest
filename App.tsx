@@ -7,8 +7,8 @@
 
 import React from 'react';
 import { StatusBar } from 'react-native';
-import { AppProvider } from './src/context/AppContext';
-import AppNavigator from './src/navigation/AppNavigator';
+import { AppProvider } from './crownquest/crownquest-context/CrownQuestContext';
+import AppNavigator from './crownquest/crownquest-navigation/CrownQuestNavigator';
 
 function App(): React.JSX.Element {
   return (

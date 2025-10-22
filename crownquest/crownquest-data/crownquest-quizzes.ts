@@ -1,4 +1,4 @@
-import { Quiz } from '../types';
+import { Quiz } from '../crownquest-types/crownquest-types';
 
 export const quizzes: Quiz[] = [
   {

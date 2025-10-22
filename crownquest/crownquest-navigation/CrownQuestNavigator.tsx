@@ -1,16 +1,16 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { useApp } from '../context/AppContext';
+import { useApp } from '../crownquest-context/CrownQuestContext';
 
 // Screens
-import OnboardingScreen from '../screens/OnboardingScreen';
-import SurveyScreen from '../screens/SurveyScreen';
-import MainMenuScreen from '../screens/MainMenuScreen';
-import StoriesScreen from '../screens/StoriesScreen';
-import StoryDetailScreen from '../screens/StoryDetailScreen';
-import QuizScreen from '../screens/QuizScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import OnboardingScreen from '../crownquest-screens/CrownQuestOnboardingScreen';
+import SurveyScreen from '../crownquest-screens/CrownQuestSurveyScreen';
+import MainMenuScreen from '../crownquest-screens/CrownQuestMainMenuScreen';
+import StoriesScreen from '../crownquest-screens/CrownQuestStoriesScreen';
+import StoryDetailScreen from '../crownquest-screens/CrownQuestStoryDetailScreen';
+import QuizScreen from '../crownquest-screens/CrownQuestQuizScreen';
+import SettingsScreen from '../crownquest-screens/CrownQuestSettingsScreen';
 
 export type RootStackParamList = {
   Onboarding: undefined;

@@ -29,21 +29,21 @@ const slides: OnboardingSlide[] = [
     description: 'Enter a world where crowns tell stories of power, art, and destiny. Travel through centuries of history and uncover the secrets behind royal symbols.',
     buttonText: 'Begin Your Quest',
     image: 'onboarding1',
-    man: require('../assets/img/Man/1.png')
+    man: require('../crownquest-assets/img/Man/1.png')
   },
   {
     title: 'Discover the Stories Behind the Jewels',
     description: 'Every crown has a story — of faith, ambition, and beauty. Read richly written histories from across civilizations and eras. Experience the human side of royalty.',
     buttonText: 'Explore Stories',
     image: 'onboarding2',
-    man: require('../assets/img/Man/2.png')
+    man: require('../crownquest-assets/img/Man/2.png')
   },
   {
     title: 'Learn, Play, and Explore',
     description: 'Test your knowledge through quick interactive quizzes. Connect the dots between empires, cultures, and craftsmanship. Turn curiosity into discovery.',
     buttonText: 'Start Learning',
     image: 'onboarding3',
-    man: require('../assets/img/Man/3.png')
+    man: require('../crownquest-assets/img/Man/3.png')
   },
   {
     title: 'Choose Your Path',
@@ -53,7 +53,7 @@ const slides: OnboardingSlide[] = [
   }
 ];
 
-const OnboardingScreen: React.FC = () => {
+const CrownQuestOnboardingScreen: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const navigation = useNavigation();
 
@@ -84,7 +84,7 @@ const OnboardingScreen: React.FC = () => {
 
   const renderCrownIcon = () => (
     <View style={styles.crownContainer}>
-      <Image source={require('../assets/img/logo.png')} style={styles.crown} />
+      <Image source={require('../crownquest-assets/img/logo.png')} style={styles.crown} />
     </View>
   );
 
@@ -154,7 +154,7 @@ const OnboardingScreen: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
-        source={require('../assets/img/5c11bbe5e16d5d7da07f52af4718639fd04d5bbe.png')} // Замените на ваш путь к изображению
+        source={require('../crownquest-assets/img/5c11bbe5e16d5d7da07f52af4718639fd04d5bbe.png')} // Замените на ваш путь к изображению
         style={styles.background}
         imageStyle={styles.backgroundImage}
       >
@@ -323,4 +323,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default OnboardingScreen;
+export default CrownQuestOnboardingScreen;

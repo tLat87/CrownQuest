@@ -1,4 +1,4 @@
-import { Era } from '../types';
+import { Era } from '../crownquest-types/crownquest-types';
 
 export const eras: Era[] = [
   {

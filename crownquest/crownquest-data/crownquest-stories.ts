@@ -1,4 +1,4 @@
-import { Story } from '../types';
+import { Story } from '../crownquest-types/crownquest-types';
 
 export const stories: Story[] = [
   {

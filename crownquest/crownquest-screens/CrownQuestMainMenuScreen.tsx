@@ -13,7 +13,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import Share from 'react-native-share';
 import { useNavigation } from '@react-navigation/native';
 
-const MainMenuScreen: React.FC = () => {
+const CrownQuestMainMenuScreen: React.FC = () => {
   const navigation = useNavigation();
 
   const handleShare = async () => {
@@ -31,14 +31,14 @@ const MainMenuScreen: React.FC = () => {
 
   const renderCrownIcon = () => (
     <View style={styles.crownContainer}>
-      <Image source={require('../assets/img/logo.png')} style={styles.crown} />
+        <Image source={require('../crownquest-assets/img/logo.png')} style={styles.crown} />
     </View>
   );
 
   const renderCharacter = () => (
     <View style={styles.characterContainer}>
       {/* <View style={styles.character}> */}
-        <Image source={require('../assets/img/Man/1.png')} style={{width: 110, height: 180}} />
+        <Image source={require('../crownquest-assets/img/Man/1.png')} style={{width: 110, height: 180}} />
       {/* </View> */}
       
       <TouchableOpacity style={styles.speechBubble} onPress={handleShare}>
@@ -55,7 +55,7 @@ const MainMenuScreen: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
-        source={require('../assets/img/5c11bbe5e16d5d7da07f52af4718639fd04d5bbe.png')} // Замените на ваш путь к изображению
+        source={require('../crownquest-assets/img/5c11bbe5e16d5d7da07f52af4718639fd04d5bbe.png')} // Замените на ваш путь к изображению
         style={styles.background}
         imageStyle={styles.backgroundImage}
       >
@@ -81,7 +81,7 @@ const MainMenuScreen: React.FC = () => {
               style={styles.gradientButton}
             >
               <Text style={styles.menuButtonText}>QUIZ</Text>
-              <Image source={require('../assets/img/Icon/1.png')} />
+              <Image source={require('../crownquest-assets/img/Icon/1.png')} />
             </LinearGradient>
           </TouchableOpacity>
 
@@ -96,7 +96,7 @@ const MainMenuScreen: React.FC = () => {
               style={styles.gradientButton}
             >
               <Text style={styles.menuButtonText}>STORIES</Text>
-              <Image source={require('../assets/img/Icon/2.png')} />
+              <Image source={require('../crownquest-assets/img/Icon/2.png')} />
             </LinearGradient>
           </TouchableOpacity>
 
@@ -111,7 +111,7 @@ const MainMenuScreen: React.FC = () => {
               style={styles.gradientButton}
             >
               <Text style={styles.menuButtonText}>SETTINGS</Text>
-              <Image source={require('../assets/img/Icon/3.png')} />
+              <Image source={require('../crownquest-assets/img/Icon/3.png')} />
             </LinearGradient>
           </TouchableOpacity>
 
@@ -345,4 +345,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default MainMenuScreen;
+export default CrownQuestMainMenuScreen;
