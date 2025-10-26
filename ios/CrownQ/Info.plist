@@ -33,6 +33,12 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Crown Academy Quest needs access to your photo library to allow you to share images and content from the app.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Crown Academy Quest needs access to your camera to allow you to take photos and share them.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Crown Academy Quest needs access to your microphone for audio features.</string>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
