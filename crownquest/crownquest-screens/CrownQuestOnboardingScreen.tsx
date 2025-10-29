@@ -21,6 +21,7 @@ interface OnboardingSlide {
   description: string;
   buttonText: string;
   image: string;
+  man?: any;
 }
 
 const slides: OnboardingSlide[] = [
@@ -158,11 +159,11 @@ const CrownQuestOnboardingScreen: React.FC = () => {
         style={styles.background}
         imageStyle={styles.backgroundImage}
       >
-        {/* <ScrollView 
+        <ScrollView 
           style={styles.scrollView}
           contentContainerStyle={styles.scrollContent}
           showsVerticalScrollIndicator={false}
-        > */}
+        >
           <View style={styles.content}>
           {renderCrownIcon()}
           
@@ -195,7 +196,7 @@ const CrownQuestOnboardingScreen: React.FC = () => {
             </TouchableOpacity>
           </View>
           </View>
-        {/* </ScrollView> */}
+        </ScrollView>
       </ImageBackground>
     </SafeAreaView>
   );
@@ -218,14 +219,17 @@ const styles = StyleSheet.create({
     flex: 1
   },
   scrollContent: {
+    flexGrow: 1,
     paddingBottom: 50
   },
   content: {
     flex: 1,
+    minHeight: height - 100, // Ensure minimum height for proper spacing
     paddingHorizontal: 20,
     paddingTop: 60,
     paddingBottom: 40,
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    alignItems: 'center'
   },
   crownContainer: {
     alignItems: 'center',
@@ -256,19 +260,19 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     alignItems: 'center',
-    gap: 15
+    gap: 15,
+    marginTop: 20,
+    marginBottom: 20
   },
   button: {
     borderRadius: 25
   },
   gradientButton: {
-    
     borderRadius: 25,
     height: 50,
     width: 150,
     alignItems: 'center',
     justifyContent: 'center'
-
   },
   buttonText: {
     color: '#2C1810',

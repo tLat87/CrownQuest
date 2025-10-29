@@ -59,11 +59,11 @@ const CrownQuestMainMenuScreen: React.FC = () => {
         style={styles.background}
         imageStyle={styles.backgroundImage}
       >
-        {/* <ScrollView 
+        <ScrollView 
           style={styles.scrollView}
           contentContainerStyle={styles.scrollContent}
           showsVerticalScrollIndicator={false}
-        > */}
+        >
           <View style={styles.header}>
             {renderCrownIcon()}
             <Text style={styles.title}>Main menu</Text>
@@ -119,7 +119,7 @@ const CrownQuestMainMenuScreen: React.FC = () => {
         </View>
 
           {renderCharacter()}
-        {/* </ScrollView> */}
+        </ScrollView>
       </ImageBackground>
     </SafeAreaView>
   );
@@ -142,6 +142,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   scrollContent: {
+    flexGrow: 1,
     paddingBottom: 50
   },
   header: {

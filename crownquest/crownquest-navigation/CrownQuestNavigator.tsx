@@ -37,13 +37,14 @@ const AppNavigator: React.FC = () => {
             cardStyle: { backgroundColor: '#2C1810' }
           }}
         >
-          {/* {!state.hasCompletedSurvey ? ( */}
-    
+          {!state.hasCompletedSurvey ? (
+            <>
               <Stack.Screen name="Onboarding" component={OnboardingScreen} />
               <Stack.Screen name="Survey" component={SurveyScreen} />
-
-          
+            </>
+          ) : (
             <Stack.Screen name="Main" component={MainMenuScreen} />
+          )}
           
           
           <Stack.Screen name="Stories" component={StoriesScreen} />
